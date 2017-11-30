@@ -16,6 +16,9 @@ class erLhcoreClassLhcCustomerValidator
             ),
             'phone' => new ezcInputFormDefinitionElement(
                 ezcInputFormDefinitionElement::OPTIONAL, 'unsafe_raw'
+            ),
+            'description' => new ezcInputFormDefinitionElement(
+                ezcInputFormDefinitionElement::OPTIONAL, 'unsafe_raw'
             )
         );
 
@@ -38,6 +41,12 @@ class erLhcoreClassLhcCustomerValidator
             $item->email = $form->email;
         } else {
             $item->email = '';
+        }
+        
+        if ($form->hasValidData('description') && $form->description != '') {
+            $item->description = $form->description;
+        } else {
+            $item->description = '';
         }
 
         if ($form->hasValidData('phone') && $form->phone != '') {

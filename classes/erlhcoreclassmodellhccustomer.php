@@ -19,7 +19,8 @@ class erLhcoreClassModelLhcCustomer
             'name' => $this->name,
             'address' => $this->address,
             'phone' => $this->phone,
-            'email' => $this->email
+            'email' => $this->email,
+            'description' => $this->description
         );
     }  
 
@@ -51,13 +52,15 @@ class erLhcoreClassModelLhcCustomer
 
     public $id = null;
 
-    public $name = null;
+    public $name = '';
 
-    public $address = null;
+    public $address = '';
 
-    public $phone = null;
+    public $description = '';
 
-    public $email = null;
+    public $phone = '';
+
+    public $email = '';
 }
 
 ?>

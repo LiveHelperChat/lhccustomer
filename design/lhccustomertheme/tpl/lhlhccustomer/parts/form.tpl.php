@@ -18,3 +18,8 @@
     <input type="text" class="form-control" name="phone" value="<?php echo htmlspecialchars($item->phone)?>" />
 </div>
 
+<div class="form-group">
+    <label><?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('module/lhccustomer','Description');?></label>
+    <textarea rows="5" class="form-control" name="description"><?php echo htmlspecialchars($item->description)?></textarea>
+</div>
+
