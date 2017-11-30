@@ -1,0 +1,1 @@
+<li role="presentation"><a href="#main-customer-chat-<?php echo $chat->id?>" aria-controls="main-customer-chat-<?php echo $chat->id?>" role="tab" data-toggle="tab" title="<?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('chat/adminchat','Customer')?>"><i class="material-icons">&#xE7FB;</i></a></li>

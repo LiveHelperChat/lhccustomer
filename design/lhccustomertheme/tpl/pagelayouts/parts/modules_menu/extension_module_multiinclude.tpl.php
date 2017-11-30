@@ -1,0 +1,1 @@
+<li><a href="<?php echo erLhcoreClassDesign::baseurl('lhccustomer/index')?>"><i class="material-icons">&#xE7FB;</i><?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('pagelayout/pagelayout','Customers');?></a></li>

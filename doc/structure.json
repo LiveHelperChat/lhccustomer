@@ -1,0 +1,87 @@
+{
+    "tables": {        
+        "lhc_lhccustomer": [
+            {
+                "field": "id",
+                "type": "bigint(20) unsigned",
+                "null": "NO",
+                "key": "PRI",
+                "default": null,
+                "extra": ""
+            },
+            {
+                "field": "name",
+                "type": "varchar(100)",
+                "null": "NO",
+                "key": "",
+                "default": null,
+                "extra": ""
+            },
+            {
+                "field": "description",
+                "type": "text",
+                "null": "NO",
+                "key": "",
+                "default": null,
+                "extra": ""
+            },
+            {
+                "field": "address",
+                "type": "text",
+                "null": "NO",
+                "key": "",
+                "default": null,
+                "extra": ""
+            },
+            {
+                "field": "email",
+                "type": "varchar(100)",
+                "null": "NO",
+                "key": "",
+                "default": null,
+                "extra": ""
+            },
+            {
+                "field": "phone",
+                "type": "varchar(100)",
+                "null": "NO",
+                "key": "",
+                "default": null,
+                "extra": ""
+            }
+        ],
+        "lhc_lhccustomer_chat": [
+            {
+                "field": "id",
+                "type": "bigint(20) unsigned",
+                "null": "NO",
+                "key": "PRI",
+                "default": null,
+                "extra": ""
+            },
+            {
+                "field": "chat_id",
+                "type": "bigint(20) unsigned",
+                "null": "NO",
+                "key": "",
+                "default": null,
+                "extra": ""
+            },
+            {
+                "field": "customer_id",
+                "type": "int(11) unsigned",
+                "null": "NO",
+                "key": "",
+                "default": null,
+                "extra": ""
+            }
+        ]
+    },  
+    "tables_data": {    },
+    "tables_data_identifier": {    },
+    "tables_indexes" : {    },
+    "tables_create": {
+    	"lhc_lhccustomer" : "CREATE TABLE `lhc_lhccustomer` ( `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(100) NOT NULL, `description` text NOT NULL, `address` text NOT NULL, `email` varchar(100) NOT NULL, `phone` varchar(100) NOT NULL, PRIMARY KEY (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8",
+    	"lhc_lhccustomer_chat" : "CREATE TABLE `lhc_lhccustomer_chat` ( `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, `chat_id` bigint(20) unsigned NOT NULL, `customer_id` int(11) unsigned NOT NULL, PRIMARY KEY (`id`), KEY `chat_id` (`chat_id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8"
+    }
+}
