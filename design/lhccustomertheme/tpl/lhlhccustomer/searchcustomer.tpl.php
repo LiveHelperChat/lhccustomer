@@ -1,5 +1,5 @@
 <?php if (!empty($items)) : ?>
-<table class="table">
+<table class="table" ng-non-bindable>
     <tr>
         <th><?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('module/lhccustomer', 'Name')?></th>
         <th><?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('module/lhccustomer', 'E-mail')?></th>

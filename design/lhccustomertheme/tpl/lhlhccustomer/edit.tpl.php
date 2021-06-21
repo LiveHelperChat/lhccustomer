@@ -4,7 +4,7 @@
 	<?php include(erLhcoreClassDesign::designtpl('lhkernel/validation_error.tpl.php'));?>
 <?php endif; ?>
 
-<form action="<?php echo erLhcoreClassDesign::baseurl('lhccustomer/edit')?>/<?php echo $item->id?>" method="post">
+<form action="<?php echo erLhcoreClassDesign::baseurl('lhccustomer/edit')?>/<?php echo $item->id?>" method="post" ng-non-bindable>
     <?php include(erLhcoreClassDesign::designtpl('lhlhccustomer/parts/form.tpl.php'));?>
     <div class="btn-group" role="group" aria-label="...">
         <input type="submit" class="btn btn-default" name="Save_page" value="<?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('system/buttons','Save');?>"/>

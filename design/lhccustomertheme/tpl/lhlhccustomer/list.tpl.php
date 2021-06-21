@@ -1,5 +1,5 @@
 <h1><?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('module/lhccustomer','Customers');?></h1>
-<form action="<?php echo erLhcoreClassDesign::baseurl('lhccustomer/list')?>" method="get">
+<form action="<?php echo erLhcoreClassDesign::baseurl('lhccustomer/list')?>" method="get" ng-non-bindable>
     <div class="row">
         <div class="col-xs-3">
             <div class="form-group">
@@ -26,7 +26,7 @@
 </form>
 
 <?php if (isset($items)) : ?>
-    <table cellpadding="0" cellspacing="0" class="table" width="100%">
+    <table cellpadding="0" cellspacing="0" class="table" width="100%" ng-non-bindable>
         <thead>
         <tr>
             <th width="1%">ID</th>
